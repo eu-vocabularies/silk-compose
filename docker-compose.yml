@@ -1,0 +1,13 @@
+---
+services:
+  silk_workbench:
+    image: costezki/silk-workbench:latest
+    ports:
+      - "8500:80"
+    environment:
+      - "PORT=80"
+    restart: always
+    volumes:
+      - "./workspace-silk:/opt/silk/workspace"
+version: "2"
+
